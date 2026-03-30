@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>FILE UPLOAD AND RETRIEVAL</title>
+    </head>
+    <body>
+        <h1>Photo Management</h1>
+
+
+        <!-- File Upload Form -->
+        <form action = "uploadphoto.php" method = "post" enctype="multipart/form-data">
+            <label for = "file">CHOOSE A FILE</label>
+            <input type = "file" name = "uploaded_file" id = "file" required>
+            <br>
+            <input type = "submit" value = "Upload">
+        </form>
+
+        view photos button 
+        <form action="viewphoto.php" method="post">
+            <input type="hidden" name="action" value="retrieve">
+            <input type="submit" value="Retrieve File">
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Member Login</title>
+    </head>
+    <body>
+        <h1>Photo Club Login</h1>
+
+
+        <!-- this form is where current users can login to acess their saved photos -->
+        <!-- Here is where a user can submit their details in the form -->
+        <form action = "login.php" method = "post" enctype="multipart/form-data">
+            <!-- Button for entering email details -->
+            <label for = "email">EMAIL</label>
+            <input type = "text" name = "email" id = "text" required>
+            <!-- Button for entering users passwords -->
+            <label for = "password">PASSWORD</label>
+            <input type = "text" name = "password" id = "text" required>
+            <br>
+            <!-- button for submitting user details and if their correct allows them to login -->
+            <input type = "submit" value = "LOG IN">
+        </form>
